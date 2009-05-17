@@ -1,7 +1,7 @@
 
 %define realname   Text-CSV
-%define version    1.11
-%define release    %mkrel 2
+%define version    1.12
+%define release    %mkrel 1
 
 Name:       perl-%{realname}
 Version:    %{version}
