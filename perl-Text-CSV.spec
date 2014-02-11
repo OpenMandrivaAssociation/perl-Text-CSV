@@ -1,10 +1,10 @@
 %define modname	Text-CSV
-%define modver 5.13.6
+%define modver 1.21
 
 Summary:	Manipulate comma-separated value strings
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
