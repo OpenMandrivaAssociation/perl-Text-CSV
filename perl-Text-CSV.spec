@@ -4,11 +4,11 @@
 Summary:	Manipulate comma-separated value strings
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	11
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Text/MIYAGAWA/perl-%{version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/Text/MIYAGAWA/%{modname}-%{modver}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(IO::Handle)
