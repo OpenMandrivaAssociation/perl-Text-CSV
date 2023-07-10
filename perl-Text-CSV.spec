@@ -1,14 +1,13 @@
 %define modname	Text-CSV
-%define modver 1.21
 
 Summary:	Manipulate comma-separated value strings
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	20
+Version:	2.02
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Text/MIYAGAWA/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Text/ISHIGAKI/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(IO::Handle)
@@ -28,21 +27,19 @@ user-specified characters as delimiters, separators, and escapes so it is
 perhaps better called ASV (anything separated values) rather than just CSV.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
+perl Makefile.PL INSTALLDIRS=vendor
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
-make test
+%make_build test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
-%doc Changes README
+%doc Changes
 %{perl_vendorlib}/*
 %{_mandir}/man3/*
-
-
