@@ -2,7 +2,7 @@
 
 Summary:	Manipulate comma-separated value strings
 Name:		perl-%{modname}
-Version:	2.03
+Version:	2.04
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
